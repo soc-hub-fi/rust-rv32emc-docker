@@ -60,7 +60,7 @@ RUN ./x build library
 
 
 # A lean image with only what's necessary
-FROM docker.io/library/archlinux:base-devel-20240101.0.204074 as minimal
+FROM docker.io/library/archlinux:base-devel-20240101.0.204074 AS minimal
 
 # Copy RISC-V cross-compiler
 ENV RISCV=/opt/riscv/
