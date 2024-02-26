@@ -82,6 +82,7 @@ COPY config.devel.toml ./config.toml
 
 # Build the Rust compiler
 RUN ./x build library
+RUN ./x build proc-macro-srv-cli
 
 
 # A lean image with only what's necessary
